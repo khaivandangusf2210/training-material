@@ -20,6 +20,7 @@ contributors:
 - dangkhai
 - paulocilasjr
 - qchiujunhao
+- afpybus
 - jgoecks
 tags:
 - HAM10000 Dataset
@@ -215,7 +216,7 @@ After uploading the dataset, configure the Image Learner parameters as follows. 
 
 > <hands-on-title> Task description </hands-on-title>
 >
-> 1. {% tool [Image Learner](toolshed.g2.bx.psu.edu/repos/goeckslab/image_learner/c5150cceab47) %} with the following parameters:
+> 1. {% tool [Image Learner](toolshed.g2.bx.psu.edu/repos/goeckslab/image_learner/image_learner/0.1.5+galaxy0) %} with the following parameters:
 >    - {% icon param-file %} *"Input image collection (ZIP)"*: `images_96.zip`
 >    - {% icon param-file %} *"Image metadata (CSV)"*: `image_metadata_new.csv`
 >    - {% icon param-select %} *"Task"*: `Classification`
@@ -349,7 +350,7 @@ To contextualize our results, we compare against the CNN results reported by She
 | ROC-AUC | Not reported | 0.9880 (98.80%) |
 | Cohen's Kappa | Not reported | 0.8875 |
 
-### Key takeaways
+## Key takeaways
 - **Image Learner outperforms the reference CNN** across all comparable metrics (accuracy, precision, recall, F1-score).
 - Our model achieves 90.36% accuracy vs. 86% in the paper, and 91.02% precision vs. 88%.
 - The ROC-AUC of 0.9880 demonstrates excellent discrimination ability not reported in the original paper.
